@@ -1,0 +1,123 @@
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>AVID</title>
+
+<style>
+<!--
+div.Section1
+	{page:Section1;}
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif"}
+table.TableGrid
+	{border:1.0pt solid black;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	}
+-->
+</style>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>AVID</title>
+
+<style>
+<!--
+div.Section1
+	{page:Section1;}
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif"}
+table.TableGrid
+	{border:1.0pt solid black;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	}
+-->
+</style>
+</head>
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<body>
+
+<table class="MsoNormalTable" border="0" cellpadding="0" width="1217" id="table3" height="35">
+	<tr>
+		<td valign="top" style="width: 1211px; height: 31px; padding: .75pt" align="left">
+		<p class="text">
+		<span lang="en-us"><font face="Calibri" size="5" color="#0000FF">
+		<b>Simulation of Atmospheric Visibility Impairment</b></font></span><p class="text">
+		<span lang="en-us"><font face="Calibri" size="4" color="#0000FF">
+		Anqi Zhu<sup>1</sup>,&nbsp;Lin Zhang*</font></span><font face="Calibri" size="4" color="#0000FF"><sup>1</sup><span lang="en-us">, 
+		Shiyu Zhao</span><sup>1</sup><span lang="en-us">,
+		Shengjie Zhao</span><sup>1</sup><span lang="en-us">, 
+		Yicong Zhou</span><sup>2</sup></font>
+		
+		<p class="text">
+		<span lang="en-us"><font face="Calibri" size="4" color="#0000FF">
+		<sup>1</sup>
+		School of Software Engineering, Tongji University, Shanghai, China</font></span>
+
+		<p class="text">
+		<span lang="en-us"><font face="Calibri" size="4" color="#0000FF">
+		<sup>2</sup>
+		Department of Computer and Information Science, University of Macau, China</font></span>
+
+	</font></td>
+	</tr>
+	</table>
+<hr>
+<p><span lang="en-us"><b><font face="Calibri" size="5">Introduction</font></b></span></p>
+<p>
+<span style="font-size: 13pt; font-family: Calibri; color: windowtext" lang="EN-US">
+This is the website for our paper &quot;Simulation of Atmospheric Visibility Impairment<span style="color: #000000"></span></a>&quot;</span>.</p>
+
+<hr>
+<p><span lang="en-us"><b><font face="Calibri" size="5">Abstract</font></b></span></p>
+<p> 
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt"> 
+<a> Changes in aerosol composition and its proportions can cause changes in atmospheric visibility. Vision systems deployed outdoors must take into account the negative effects brought by visibility impairment. In order to develop vision algorithms that can adapt to low atmospheric visibility conditions, a large-scale dataset containing pairs of clear images and their visibility-impaired versions (along with other annotations if necessary) is usually indispensable. However, it is almost impossible to collect large amounts of such image pairs in a real physical environment. A natural and reasonable solution is to use virtual simulation technologies, which is also the focus of this paper. In this paper, we first deeply analyze the limitations and irrationalities of the existing work specializing on simulation of atmospheric visibility impairment. We point out that many simulation schemes actually even violate the assumptions of the Koschmieder's law. Second, more importantly, based on a thorough investigation of the relevant studies in the field of atmospheric science, we present simulation strategies for five most commonly encountered visibility impairment phenomena, including mist, fog, natural haze, smog, and Asian dust. Our work establishes a direct link between the fields of atmospheric science and computer vision. Third, with the proposed simulation schemes, a large-scale synthetic dataset is established, comprising 40,000 clear source images and their 800,000 visibility-impaired versions. </a></font></span></p>
+<hr>
+
+<p><span lang="en-us"><b><font face="Calibri" size="5">Examples in AVID</font></b></span></p>
+<p> 
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt"> 
+<a>
+Real world images and our simulation results are shown for comparison. From the first column to the fifth column, the related natural phenomena are mist, fog, natural haze, smog, and Asian dust, respectively.
+By comparing with the real world images, it can be seen that our simulation results are quite realistic.
+</a></font></span></p>
+<img src="./real-and-sim.png" height="400"></img>
+
+<p> 
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt"> 
+<a>
+To facilitate readers to visually examine the reality of images in AVID, synthesized results from a selected clear scene with different visibility levels are shown in the figure below.
+</a></font></span></p>
+<img src="./visibility.png" height="400"></img>
+
+<hr>
+
+<p><span lang="en-us"><b><font face="Calibri" size="5">Comparision with Datasets Related to Atmospheric Visibility Impairment Simulation</font></b></span></p>
+<p> 
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt"> 
+<a>
+We qualitatively compare AVID and the relevant datasets in the literature. It can be conclude that AVID is superior to existing relevant datasets on nearly all the key indicators, making it a better candidate to train vision algorithms in which the atmospheric visibility impairment should be considered, e.g. image restoration from visibility-impaired outdoor images or image-based visibility estimation.
+</a></font></span></p>
+<img src="./comp.png" height="350"></img>
+
+<hr>
+
+
+<p><span lang="en-us"><b><font face="Calibri" size="5">Source Codes and Data</font></b></span></p>
+<p>
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt"> 
+<a href="https://github.com/aaaaangel/Pedestrian360">Get the code and data. </a></font></span></p>
+
+<hr>
+
+<p align="justify"><font face="Calibri">Last update: <span lang="en-us">Dec. 1,
+</span>202<span lang="en-us">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+</body>
+</html>
